@@ -6,7 +6,6 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'angularCalc';
 
   subText = '';
   mainText = '';
@@ -22,6 +21,10 @@ export class AppComponent {
       this.answered = false;
     }
     if (key === '/' || key === 'x' || key === '-' || key === '+') {
+      const lastKey = this.mainText[this.mainText.length - 1];
+      if (lastKey === '/' || lastKey === 'x' || lastKey === '-' || lastKey === '+') {
+        return;
+      }
       this.operand1 = parseFloat(this.mainText);
       this.operator = key;
     }

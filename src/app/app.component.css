@@ -12,12 +12,14 @@
     font-size: 4rem;
     text-align: right;
     font-family: Courier, monospace;
+    overflow: auto;
 }
 
 .subdisplay {
     border-bottom: 1px solid black;
     height: 25%;
     font-size: 2rem;
+    overflow: auto;
 }
 
 .keypad {

@@ -1,13 +1,13 @@
 .base {
     background: darkslategray;
-    height: 90vh;
     margin-top: 5vh;
     border: 3px solid black;
+    width: 100%;
 }
 
 .maindisplay {
     background: lightgrey;
-    height: calc(100% / 3);
+    height: 25vh;
     padding: 5% !important;
     font-size: 4rem;
     text-align: right;
@@ -28,7 +28,6 @@
 
 .keys {
     margin: 0;
-    width: 25%;
     height: 20%;
     background: whitesmoke;
     color: black;
@@ -36,18 +35,14 @@
     font-size: 2rem;
     text-align: center;
     cursor: pointer;
+    opacity: 0.9;
 }
 
-.one-line {
-    display: inline-block;
-}
-
-.zerokey {
-    width: 50%;
+.keys:hover {
+    opacity: 1;
 }
 
 .ackey {
-    width: 75%;
     color: red;
     background: black;
 }
